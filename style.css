@@ -7,6 +7,7 @@
     --m-height: 100vh;
     --railway: "Raleway", sans-serif;
     --gray-bg: #f1f1f1;
+    --dark-gray: #616161;
 
     user-select: none;
 }
@@ -422,11 +423,188 @@ li{
 .our-works-container .work-image img:hover{
     opacity: 1;
 }
-
 /* our works css end */
 
 
+/* our skills css */
+.our-skills-container{
+    background-color: var(--gray-bg);
+}
+.our-skills-container .skills{
+    max-width: var(--max-w);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 0;
+}
+.our-skills-container .skills .skills-left{
+    width: 50%;
+}
+.our-skills-container .skills .skills-left .skill-title{
+    font-size: 24px;
+    line-height: 43.2px;
+    letter-spacing: normal;
+    font-weight: 400;
+    padding: 30px 0;
+    text-align: start;
+}
+.our-skills-container .skills .skills-left .skill-desc{
+    font-size: 15px;
+    line-height: 27px;
+    line-height: normal;
+    text-align: start;
+    padding: 15px 0;
+    
+}
+.our-skills-container .skills .skills-right{
+    width: 50%;
+    padding-left: 20px;
+}
+.our-skills-container .skills .skills-right .skill{
+    padding: 30px 0;
+}
+/* our skills css end */
 
+/* pricing section css */
+.pricing-container{
+    background-color: var(--dark-gray);
+}
+.pricing-container .pricing-wrapper{
+    max-width: var(--max-w);
+    margin: auto;
+    padding: 65px 0;
+    color: white;
+}
+.pricing-container .pricing-wrapper .pricing-header{
+    text-align: center;
+}
+.pricing-container .pricing-wrapper .pricing-header .pricing-header-title{
+    font-size: 24px;
+    font-weight: 43.2px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.pricing-container .pricing-wrapper .pricing-header .pricing-header-para{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.8px;
+    letter-spacing: normal;
+    margin: 50px 0;
+}
+.pricing-container .pricing-wrapper .pricing-cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.pricing-container .pricing-wrapper .pricing-cards .pricing-card{
+    background-color: white;
+    color: black;
+    transition: all var(--d-transition);
+}
+.pricing-container .pricing-wrapper .pricing-cards .pricing-card:hover{
+    box-shadow: 6px 6px 7px #29282888, -6px -6px 7px #29282888;
+}
+.pricing-card:nth-child(2){
+    margin: 0 20px;
+}
+.pricing-title{
+    background-color: #000;
+    color: white;
+    padding: 50px 150px;
+    margin-bottom: 5px;
+}
+.pricing-cards .pricing-card #middle-card{
+    background-color: #f44336!important;
+    color: white;
+    padding: 60px 150px;
+    margin-top: -10px;
+}
+.pricing-cards .pricing-card .pricing-features{
+    padding: 30px 0;
+}
+.pricing-cards .pricing-card .pricing-btn-wrapper .pricing-sign-up-btn{
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 20px 40px;
+    transition: var(--d-transition);
+}
+.pricing-cards .pricing-card .pricing-btn-wrapper .pricing-sign-up-btn:hover{
+    background-color: #838181a6;
+    color: rgb(0, 0, 0);
+}
+.pricing-card .pricing-features .pricing-special{
+    font-weight: 600;
+    font-size: 18px;
+}
+/* pricing section css end */
+
+/* contact us css */
+.contact-container{
+    max-width: var(--max-w);
+    margin: auto;
+    padding: 50px;
+}
+.contact-container .contact-header{
+    text-align: center;
+    padding: 60px 0;
+}
+.contact-container .contact-header .contact-header-title{
+    font-size: 24px;
+    line-height: 43.2px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+.contact-container .contact-header .contact-header-text{
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: normal;
+    padding: 10px 0 0;
+}
+.contact-container .contact-form{
+    display: grid;
+}
+.contact-container .contact-form input{
+    padding: 15px;
+    margin: 10px 0;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+.contact-container .contact-form input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+.contact-container .contact-form .send-message-btn{
+    max-width: 250px;
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: var(--d-transition);
+}
+.contact-container .contact-form .send-message-btn:hover{
+    background-color: #7e7d7da9;
+    color: rgb(0, 0, 0);
+}
+/* contact us css end */
+/* copyrigh css */
+.footer{
+    max-width: var(--max-w);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer .copyright{
+    font-size: 18px;
+}
+/* copyrigh css */
 
 
 /* google map css  */
