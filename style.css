@@ -11,6 +11,9 @@
 
     user-select: none;
 }
+body{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -145,8 +148,6 @@ li{
  /* about the company */
 
 .about-company-container{
-    /* display: flex;
-    flex-direction: column; */
     padding: 130px 0;
     max-width: var(--max-w);
     min-height: calc(var(--m-height) - 15vh);
@@ -594,29 +595,60 @@ li{
     color: rgb(0, 0, 0);
 }
 /* contact us css end */
-/* copyrigh css */
+
+/* copyright css */
+.footer-bottom{
+    background-color: #000;
+    text-align: center;
+    color: white;
+}
+.to-top-btn,.social-media{
+    max-width: var(--max-w);
+    margin: auto;
+}
+.go-to-top{
+    font-size: 15px;
+    line-height: 27px;
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    margin: 40px 0 20px;
+    cursor: pointer;
+    transition: all var(--d-transition);
+}
+.go-to-top:hover{
+    color: #ffffff;
+    background-color: #616161;
+}
+.social-media a i{
+    font-size: 25px;
+    padding: 10px 2px;
+    cursor: pointer;
+    color: white !important;
+}
 .footer{
     max-width: var(--max-w);
     margin: auto;
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 40px;
 }
 .footer .copyright{
     font-size: 18px;
 }
-/* copyrigh css */
+/* copyright css */
 
 
 /* google map css  */
 .google-map{
     margin: 50px 0;
     text-align: center;
-
+    pointer-events: none;   
 }
 .g-map{
     width: calc(var(--max-w) - 100px);
-    filter: grayscale(100%);
-    opacity: 0.7;
+    filter: grayscale(40%);
+    opacity: 0.88;
     transition: var(--d-transition);
 }
 .g-map:hover{
