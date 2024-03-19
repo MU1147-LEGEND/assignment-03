@@ -698,7 +698,7 @@ li{
         cursor: none!important;
     }
     .to-top-btn, .social-media, .footer,.contact-container,.our-works-container,.w-k-design, .hero,.the-team-container,.about-company-container{
-        max-width: calc(var(--phone-max-width) - 5%) !important;
+        max-width: calc(var(--phone-max-width) - 15%) !important;
     }
     .pricing-container .pricing-wrapper .pricing-cards,.the-team-container .team-cards,.key-features{
         flex-direction: column;
