@@ -58,6 +58,9 @@ li{
     cursor: pointer;
     transition: var(--d-transition);
 }
+.mobile-sidebar{
+    display: none;
+}
 .special{
     color: white;
     background-color: green;
@@ -183,14 +186,14 @@ li{
     box-shadow: 7px 7px 8px #cccccc;
 }
 .key-features .key-feature:hover > .feature-icon{
-    animation: floating 3s linear infinite;
+    animation: floating 700ms linear infinite alternate;
 }
 @keyframes floating {
     0%{
-        transform: rotate(18deg);
+        transform: translate(8px, -5px);
     }
     100%{
-        transform: rotate(380deg);
+        transform: translate(0, 0);
 
     }
 
@@ -697,23 +700,44 @@ li{
     body,html{
         cursor: none!important;
     }
-    .to-top-btn, .social-media, .footer,.contact-container,.our-works-container,.w-k-design, .hero,.the-team-container,.about-company-container{
+    .top-navigation,.to-top-btn, .social-media, .footer,.contact-container,.our-works-container,.w-k-design, .hero,.the-team-container,.about-company-container{
         max-width: calc(var(--phone-max-width) - 15%) !important;
     }
     .pricing-container .pricing-wrapper .pricing-cards,.the-team-container .team-cards,.key-features{
         flex-direction: column;
     }
     .top-navigation{
-        justify-content: center;
+        justify-content: space-between;
+        margin: 0 8px;
     }
     .menu{
-    align-self: baseline;
-    display: none;
-    position: absolute;
-    top: 60px;
-    width: -webkit-fill-available;
-    margin: auto;
-    text-align: center;
+        align-self: baseline;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 0;
+        width: -webkit-fill-available;
+        margin: auto;
+        text-align: center;
+        transform: translate(0px, -260px);
+        opacity: 0;
+        transition: all 400ms ease;
+}
+    .menu-show{
+        opacity: 1;
+        transform: translate(0, 0 );
+        transition: all 400ms ease;
+    }
+    .bars-hide{
+        font-size: 0;
+        opacity: 0;
+        transition: all 300ms ease;
+    }
+    .bars-show{
+        font-size: 1.8rem;
+        opacity: 1;
+        transition: all 300ms ease;
     }
     .menu ul{
         display: flex;
@@ -818,6 +842,12 @@ li{
     .pricing-cards .pricing-card #middle-card{
         padding: 45px 0;
         margin: 0;
+    }
+    .mobile-sidebar{
+        display: block;
+    }
+    .sidebar{
+        font-size: 1.8rem;
     }
 
 
