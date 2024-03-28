@@ -9,8 +9,6 @@
     --railway: "Raleway", sans-serif;
     --gray-bg: #f1f1f1;
     --dark-gray: #616161;
-
-    user-select: none;
 }
 body{
     scroll-behavior: smooth;
@@ -697,9 +695,6 @@ li{
 
 /* css for mobile devices up to 480px width */
 @media (max-width: 480px) {
-    body,html{
-        cursor: none!important;
-    }
     .top-navigation,.to-top-btn, .social-media, .footer,.contact-container,.our-works-container,.w-k-design, .hero,.the-team-container,.about-company-container{
         max-width: calc(var(--phone-max-width) - 15%) !important;
     }
